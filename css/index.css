@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Fahkwang';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fahkwang Regular'), local('Fahkwang-Regular'), url(https://fonts.gstatic.com/s/fahkwang/v3/Noax6Uj3zpmBOgbNpOqIuLk.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,6 +138,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  border: 1px solid grey;
 }
 h2 {
   font-size: 3.2rem;
@@ -146,4 +154,48 @@ p {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
+}
+.navBar {
+  background-color: #303030;
+  border: 1px solid grey;
+  color: #ffffff;
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: space-between;
+  padding: 2%;
+}
+.navBar h1 {
+  color: #f1f1f1;
+  font-family: 'Fahkwang', sans-serif;
+  font-size: 3.6rem;
+}
+.navBar nav {
+  padding-top: 0.5%;
+  text-align: right;
+  width: 50%;
+}
+.navBar nav a {
+  color: #ffffff;
+  padding: 0 3.7%;
+  text-decoration: none;
+}
+.container-home {
+  background-image: url("../bohcura-background.img.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+}
+.container-home .intro {
+  color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  font-style: bold;
+  width: 35%;
+  padding-top: 10%;
+  padding-left: 2.5%;
+}
+.container-home .intro p {
+  font-size: 3.6rem;
+  margin: 3%;
 }
