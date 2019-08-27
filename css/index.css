@@ -171,7 +171,6 @@ p {
 }
 .navBar {
   background-color: #303030;
-  border: 1px solid grey;
   color: #ffffff;
   display: flex;
   font-size: 2.5rem;
@@ -223,6 +222,10 @@ p {
   border-radius: 5px;
   font-size: 1.8rem;
   text-align: center;
+  cursor: pointer;
+}
+.container-home .intro button:hover {
+  background-color: white;
 }
 .container-login-page {
   background-image: url(../man-woman-cooking.img.jpg);
@@ -256,25 +259,22 @@ p {
   margin: auto 8%;
   font-size: 3.6rem;
 }
-.container-login-page .sign-in form {
+.container-login-page .sign-in .theButtons {
   width: 50%;
 }
-.container-login-page .sign-in form input {
-  width: 75%;
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-top: 2.5%;
-}
-.container-login-page .sign-in form .btn {
+.container-login-page .sign-in .btn {
   display: block;
   background-color: #d9d9d9;
   color: black;
   margin: 0 8px 18px;
-  width: 70%;
+  width: 60%;
   height: 8vh;
   border-radius: 5px;
   font-size: 1.8rem;
   text-align: center;
   margin-top: 4%;
   align-content: center;
+}
+.container-login-page .sign-in .btn:hover {
+  background-color: white;
 }
