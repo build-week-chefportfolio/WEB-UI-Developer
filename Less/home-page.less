@@ -1,8 +1,11 @@
 header{
   background: url(../img/chef-john.png);
-  height:90vh;
+  height:125vh;
   background-size:cover;
   width:100%;
+  // @media (min-width:1440px){
+  //   background-position-y: -100px;
+  // }
 
   .top-content{
     display:flex;
@@ -30,22 +33,31 @@ header{
       padding:13px;
       align-content: center;
       text-align: center;
-      
+      a {
+        text-decoration: none;
+        color:black;
+        &:hover{
+          color:blue;
+        }
+      }
     }
   }
  
 }
 .bottom{
   background: url(../img/john2.jpg);
-  height:120vh;
+  height:123vh;
   background-size:cover;
   width:100%;
+  position: absolute;
+  // @media (min-width:1440px){
+  //   margin-top: 100px;
+  // }
   .bottom-container{
     background:rgba(255, 255, 255, 0.92);
-    position: absolute;
-    margin:7% 10%;
+    margin:7% 10% 0%;
     width:78%;
-    height:83%;
+    height:75%;
     h2{
       color:#E54236;
       text-align: center;
@@ -55,36 +67,33 @@ header{
     .text-form{
       display:flex;
       justify-content: space-around;
-      width:82%;
-      margin:6% 10%;
+      width:73%;
+      margin:7% 10% 2%;
      p{
       font-size:3.2rem;
       width:51%;
       font-family: 'Libre Franklin', sans-serif;
+      @media (max-width:1024px) {
+        font-size:2.4rem;
+      }
 
     }
-    .inputs{
+    .btn{
+      // margin:3% 0%;
       display:flex;
+      justify-content: space-evenly;
       flex-direction: column;
-      justify-content: space-between;
-      width:40%;
-      margin-top:1%;
-      .inputs1{
-        background: #FFFFFF;
-        border:1px solid black;
-        height:12%;
-      }
+      width:36%;
       button{
-        width:68%;
-        margin-left:11%;
-        padding:2%;
-        text-align: center;
-        background-color: #C4C4C4;
-        border-radius:4px;
-      }
+       padding:10%;
+       text-align: center;
+       background-color: #C4C4C4;
+       border-radius:4px;
+       width:100%
+        }
     }
-
     }
   }
-}
+ }
+
   
