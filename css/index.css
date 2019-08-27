@@ -228,11 +228,12 @@ header .top-content .btn {
   display: flex;
   justify-content: space-around;
   width: 82%;
-  margin: 10%;
+  margin: 6% 10%;
 }
 .bottom .bottom-container .text-form p {
   font-size: 3.2rem;
-  width: 47%;
+  width: 51%;
+  font-family: 'Libre Franklin', sans-serif;
 }
 .bottom .bottom-container .text-form .inputs {
   display: flex;
@@ -247,5 +248,10 @@ header .top-content .btn {
   height: 12%;
 }
 .bottom .bottom-container .text-form .inputs button {
-  width: 50%;
+  width: 68%;
+  margin-left: 11%;
+  padding: 2%;
+  text-align: center;
+  background-color: #C4C4C4;
+  border-radius: 4px;
 }
