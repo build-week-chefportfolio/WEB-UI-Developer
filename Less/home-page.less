@@ -1,11 +1,10 @@
+@import 'mixins.less';
+
 header{
   background: url(../img/chef-john.png);
   height:125vh;
   background-size:cover;
   width:100%;
-  // @media (min-width:1440px){
-  //   background-position-y: -100px;
-  // }
 
   .top-content{
     display:flex;
@@ -14,36 +13,39 @@ header{
       display:flex;
       flex-direction: column;
       width:30%;
-      color:white;
+      color:@light-gray;
       margin:10% 5% 0%;
       
       p{
         font-size:2.8rem;
       }
     }
-    .btn{
-      display:flex;
-      flex-direction: column;
-      width:10%;
-      background-color:#C4C4C4;
-      font-size:1.4rem;
-      color:#000000;
-      border-radius:4px;
-      margin:2% 5%;
-      padding:13px;
-      align-content: center;
-      text-align: center;
-      a {
-        text-decoration: none;
-        color:black;
-        &:hover{
-          color:blue;
+      .btn{
+        display:flex;
+        flex-direction: column;
+        width:10%;
+        background-color:#C4C4C4;
+        font-size:1.4rem;
+        color:#000000;
+        border-radius:4px;
+        margin:2% 5%;
+        padding:13px;
+        align-content: center;
+        text-align: center;
+          a {
+            text-decoration: none;
+            color:black;
+            &:hover{
+              color:blue;
+                }
+          } 
         }
       }
     }
-  }
+  
+    
+    
  
-}
 .bottom{
   background: url(../img/john2.jpg);
   height:123vh;
@@ -67,11 +69,11 @@ header{
     .text-form{
       display:flex;
       justify-content: space-around;
-      width:73%;
+      width:80%;
       margin:7% 10% 2%;
      p{
       font-size:3.2rem;
-      width:51%;
+      width:58%;
       font-family: 'Libre Franklin', sans-serif;
       @media (max-width:1024px) {
         font-size:2.4rem;
@@ -79,21 +81,20 @@ header{
 
     }
     .btn{
-      // margin:3% 0%;
       display:flex;
       justify-content: space-evenly;
       flex-direction: column;
-      width:36%;
+      width:40%;
       button{
-       padding:10%;
-       text-align: center;
-       background-color: #C4C4C4;
-       border-radius:4px;
-       width:100%
-        }
-    }
+        padding:10%;
+        text-align: center;
+        background-color: @deep-gray;
+        border-radius:4px;
+        width:100%;
+      }
+      }
     }
   }
- }
+}
 
   
