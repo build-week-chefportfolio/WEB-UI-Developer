@@ -68,6 +68,7 @@
         }
         .btn:hover {
             background-color: white;
+            cursor: pointer;
         }
     }
 }
@@ -114,13 +115,46 @@
 }
 
 .team {
+    .heading-paragraph();
     background-color: #f1eee9;
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
     text-align: center;
-    .heading-paragraph();
+    padding-top: 5%;
+
     
     
+    .staff {
+        .heading-paragraph(2.8rem);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding-top: 3%;
+        padding-bottom: 4%;
+        h2 {
+            font-size: 2rem;
+            padding-top: 2%;
+
+        }
+        .card{
+            width: 33%;
+            text-align: center;
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            margin-top: 5%;
+
+            .github {
+                .custom-btn(#d9d9d9, 40%, black);
+                margin-left: 15%;
+                margin-top: 5%;   
+            }
+
+            .github:hover {
+                background-color: white;
+                cursor: pointer;
+            }
+        }
+    }   
 }
 
