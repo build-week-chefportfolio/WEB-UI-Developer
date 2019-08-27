@@ -10,10 +10,23 @@
     text-align: center;
 }
 
-.background-image(@url:url("../bohcura-background.img.jpg"); ) {
+.background-image(@url:url("../images/bohcura-background.img.jpg"); ) {
     background-image: @url;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     height: 120vh;
+}
+
+.heading-paragraph (@font-size:3.6rem) {
+    h1 {
+        font-size: @font-size;
+        font-weight: bold;
+    }
+    p {
+        padding-top: 2%;
+        width: 70%;
+        text-align: center;
+        font-size: 2.6rem;
+    }
 }
