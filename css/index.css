@@ -5,6 +5,20 @@
   font-display: swap;
   src: local('Fahkwang Regular'), local('Fahkwang-Regular'), url(https://fonts.gstatic.com/s/fahkwang/v3/Noax6Uj3zpmBOgbNpOqIuLk.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heptaslab/v1/ea8JadoyU_jkHdalebHvyWVNdYoIsHe5HvkV5wfcaZQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heptaslab/v1/ea8JadoyU_jkHdalebHvyWVNdYoIsHe5HvkV5wfcaZQ.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -166,7 +180,7 @@ p {
 }
 .navBar h1 {
   color: #f1f1f1;
-  font-family: 'Fahkwang', sans-serif;
+  font-family: 'Hepta Slab', serif;
   font-size: 3.6rem;
 }
 .navBar nav {
@@ -198,4 +212,69 @@ p {
 .container-home .intro p {
   font-size: 3.6rem;
   margin: 3%;
+}
+.container-home .intro button {
+  display: block;
+  background-color: #d9d9d9;
+  color: black;
+  margin: 0 8px 18px;
+  width: 200px;
+  height: 8vh;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.container-login-page {
+  background-image: url(../man-woman-cooking.img.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  padding-top: 5%;
+}
+.container-login-page .login {
+  background-color: white;
+  opacity: 0.9;
+  margin-right: 3%;
+  margin-left: 3%;
+  padding-top: 5.5%;
+}
+.container-login-page .login h2 {
+  text-align: center;
+  color: #E54236;
+  font-size: 4rem;
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: bold;
+}
+.container-login-page .sign-in {
+  display: flex;
+  margin-top: 15%;
+  padding-bottom: 14%;
+}
+.container-login-page .sign-in p {
+  width: 48%;
+  margin: auto 8%;
+  font-size: 3.6rem;
+}
+.container-login-page .sign-in form {
+  width: 50%;
+}
+.container-login-page .sign-in form input {
+  width: 75%;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-top: 2.5%;
+}
+.container-login-page .sign-in form .btn {
+  display: block;
+  background-color: #d9d9d9;
+  color: black;
+  margin: 0 8px 18px;
+  width: 70%;
+  height: 8vh;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 4%;
+  align-content: center;
 }

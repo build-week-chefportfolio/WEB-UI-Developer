@@ -1,12 +1,19 @@
-.custom-btn (@bgcolor:#F6F6F6, @width:200px, @font-color:black) {
+.custom-btn (@bgcolor:#d9d9d9, @width:200px, @font-color:black) {
     display: block;
     background-color: @bgcolor;
     color: @font-color;
     margin: 0 8px 18px;
     width: @width;
-    height: 80px;
-    border-radius: 15px;
-    font-size: 2rem;
+    height: 8vh;
+    border-radius: 5px;
+    font-size: 1.8rem;
     text-align: center;
-    padding-top: 5%;
+}
+
+.background-image(@url:url("../bohcura-background.img.jpg"); ) {
+    background-image: @url;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
 }

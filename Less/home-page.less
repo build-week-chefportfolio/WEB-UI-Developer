@@ -1,9 +1,11 @@
 .container-home {
-    background-image: url("../bohcura-background.img.jpg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 120vh;
+    .background-image();
+    
+    // background-image: url("../bohcura-background.img.jpg");
+        // background-size: 100%;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // height: 120vh;
 
     .intro {
         color: #ffffff;
@@ -19,5 +21,59 @@
             margin: 3%;
         }
 
+        button {
+           .custom-btn();
+        }
+
     }
+}
+
+.container-login-page {
+    .background-image(url(../man-woman-cooking.img.jpg));//Adjust Image. Too cut off.
+    padding-top: 5%;
+    .login {
+        background-color: white;
+        opacity: .9;
+        margin-right: 3%;
+        margin-left: 3%;
+        padding-top: 5.5%;
+
+        h2 {
+            text-align: center;
+            color: #E54236;
+            font-size: 4rem;
+            font-family: 'Fahkwang', sans-serif;
+            font-weight: bold;
+        }
+    }
+
+    .sign-in {
+        display: flex;
+        margin-top: 15%;
+        padding-bottom: 14%;
+
+        p {
+            width: 48%;
+            margin: auto 8%;
+            font-size: 3.6rem;
+        }
+        form {
+            width: 50%;
+
+            input{
+                width: 75%;
+                font-size: 2rem;
+                line-height: 1.6;
+                margin-top: 2.5%;
+            
+            }
+            .btn {
+                .custom-btn(#d9d9d9, 70%, black);
+                margin-top: 4%;
+                align-content: center;
+            }
+        }
+    }
+
+
 }
