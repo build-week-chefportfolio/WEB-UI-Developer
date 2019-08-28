@@ -216,6 +216,14 @@ header {
   background-size: cover;
   width: 100%;
 }
+@media (max-width:500px) {
+  header {
+    max-width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25px;
+  }
+}
 header .top-content {
   display: flex;
   flex-direction: column;
@@ -227,8 +235,19 @@ header .top-content .header-content {
   color: #FFFFFF;
   margin: 10% 5% 0%;
 }
+@media (max-width:500px) {
+  header .top-content .header-content {
+    width: 30%;
+    margin: auto;
+  }
+}
 header .top-content .header-content p {
   font-size: 2.8rem;
+}
+@media (max-width:500px) {
+  header .top-content .header-content p {
+    font-size: 1.3rem;
+  }
 }
 header .top-content .btn {
   display: flex;
@@ -242,6 +261,11 @@ header .top-content .btn {
   padding: 13px;
   align-content: center;
   text-align: center;
+}
+@media (max-width:500px) {
+  header .top-content .btn {
+    width: 10%;
+  }
 }
 header .top-content .btn a {
   text-decoration: none;
