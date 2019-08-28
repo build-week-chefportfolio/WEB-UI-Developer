@@ -147,11 +147,23 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width:500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 nav {
   width: 100%;
   background-color: #303030;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width:500px) {
+  nav {
+    width: 100%;
+    background: #303030;
+  }
 }
 nav h1 {
   font-size: 2.5rem;
@@ -159,11 +171,25 @@ nav h1 {
   padding: 20px;
   font-family: 'Special Elite', cursive;
 }
+@media (max-width:500px) {
+  nav h1 {
+    font-size: 1.7rem;
+    padding: 10px;
+  }
+}
 nav .links {
   display: flex;
   justify-content: space-around;
   align-content: space-evenly;
   padding: 22px;
+}
+@media (max-width:500px) {
+  nav .links {
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
 }
 nav .links a {
   padding: 0 20px;
@@ -174,6 +200,15 @@ nav .links a {
 }
 nav .links a:hover {
   color: #F2463A;
+}
+@media (max-width:500px) {
+  nav .links a {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+  }
 }
 header {
   background: url(../img/chef-john.png);
