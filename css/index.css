@@ -184,6 +184,8 @@ p {
     align-content: center;
     width: 100%;
     text-align: center;
+    padding-bottom: 0;
+    font-size: 1.8rem;
   }
 }
 .navBar h1 {
@@ -194,6 +196,7 @@ p {
 @media (max-width:500px) {
   .navBar h1 {
     padding-top: 2%;
+    font-size: 2.5rem;
   }
 }
 .navBar nav {
@@ -239,10 +242,11 @@ p {
 }
 @media (max-width:500px) {
   .container-home {
+    background-color: #f1f1f1;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 320px;
   }
 }
 .container-home .intro {
@@ -254,7 +258,19 @@ p {
   padding-top: 10%;
   padding-left: 2.5%;
 }
-.container-home .intro p {
+@media (max-width:500px) {
+  .container-home .intro {
+    font-size: 3rem;
+    width: 40%;
+    padding-top: 10%;
+  }
+}
+@media (max-width:500px) {
+  .container-home .intro .use-bochura {
+    display: none;
+  }
+}
+.container-home .intro .use-bochura p {
   font-size: 3.6rem;
   margin: 3%;
 }
@@ -269,6 +285,14 @@ p {
   font-size: 1.8rem;
   text-align: center;
   cursor: pointer;
+}
+@media (max-width:500px) {
+  .container-home .intro button {
+    width: 60%;
+    height: 4vh;
+    margin-top: 20%;
+    font-size: 1.5rem;
+  }
 }
 .container-home .intro button:hover {
   background-color: white;
