@@ -26,14 +26,12 @@
         padding-top: .5%;
         text-align: right;
         width: 50%;  
-        // @media @mobile {
-        //     .stack();
-        //     width: 100%;
-        // }
 
         @media @mobile {
             .size();
-            .stack();
+            // .stack();
+            width: 100%;
+            justify-content: space-between;
         }
 
         
@@ -42,10 +40,14 @@
             padding: 0 3.7%;
             text-decoration: none;
             @media @mobile {
-                .stack();     
+                // .stack();     
+                // display: flex;
+                // flex-flow: row wrap;
                 text-align: center;
                 line-height: 1.5;   
                 padding-top: 5%;    
+                padding: 0;
+                margin-right: 6%;
             }
         }
 
@@ -53,6 +55,9 @@
             background-color: #ffffff;
             color: #303030;
             border-radius: 20px;
+            @media @mobile {
+                border-radius: 15px;
+            }
         }
     }
     

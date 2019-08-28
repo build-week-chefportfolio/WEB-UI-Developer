@@ -153,6 +153,11 @@ table {
 html {
   font-size: 62.5%;
   border: 1px solid grey;
+  background-color: #303030;
+}
+html,
+body {
+  scroll-behavior: smooth;
 }
 h2 {
   font-size: 3.2rem;
@@ -165,7 +170,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 100%;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -208,9 +213,8 @@ p {
   .navBar nav {
     width: 50%;
     padding: 2% 0%;
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 .navBar nav a {
@@ -220,18 +224,22 @@ p {
 }
 @media (max-width:500px) {
   .navBar nav a {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
     text-align: center;
     line-height: 1.5;
     padding-top: 5%;
+    padding: 0;
+    margin-right: 6%;
   }
 }
 .navBar nav a:hover {
   background-color: #ffffff;
   color: #303030;
   border-radius: 20px;
+}
+@media (max-width:500px) {
+  .navBar nav a:hover {
+    border-radius: 15px;
+  }
 }
 .container-home {
   background-image: url("../images/bohcura-background.img.jpg");
@@ -242,7 +250,7 @@ p {
 }
 @media (max-width:500px) {
   .container-home {
-    background-color: #f1f1f1;
+    background-color: #bdbdbd;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,19 +270,23 @@ p {
   .container-home .intro {
     font-size: 3rem;
     width: 40%;
-    padding-top: 10%;
+    padding-top: 5%;
   }
 }
-@media (max-width:500px) {
-  .container-home .intro .use-bochura {
-    display: none;
-  }
-}
-.container-home .intro .use-bochura p {
+.container-home .intro p {
   font-size: 3.6rem;
   margin: 3%;
 }
-.container-home .intro button {
+@media (max-width:500px) {
+  .container-home .intro p {
+    margin-top: 5%;
+    font-size: 1.8rem;
+  }
+}
+.container-home .intro a {
+  text-decoration: none;
+}
+.container-home .intro a button {
   display: block;
   background-color: #d9d9d9;
   color: black;
@@ -287,10 +299,10 @@ p {
   cursor: pointer;
 }
 @media (max-width:500px) {
-  .container-home .intro button {
+  .container-home .intro a {
     width: 60%;
     height: 4vh;
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 1.5rem;
   }
 }
@@ -305,12 +317,25 @@ p {
   height: 120vh;
   padding-top: 5%;
 }
+@media (max-width:500px) {
+  .container-login-page {
+    background-repeat: repeat;
+    height: 600px;
+  }
+}
 .container-login-page .login {
   background-color: white;
   opacity: 0.9;
   margin-right: 3%;
   margin-left: 3%;
   padding-top: 5.5%;
+}
+@media (max-width:500px) {
+  .container-login-page .login {
+    padding-bottom: 5%;
+    margin: 5%;
+    margin-bottom: 7%;
+  }
 }
 .container-login-page .login h2 {
   text-align: center;
@@ -319,18 +344,47 @@ p {
   font-family: 'Fahkwang', sans-serif;
   font-weight: bold;
 }
+@media (max-width:500px) {
+  .container-login-page .login h2 {
+    font-size: 2rem;
+  }
+}
 .container-login-page .sign-in {
   display: flex;
   margin-top: 15%;
   padding-bottom: 14%;
+}
+@media (max-width:500px) {
+  .container-login-page .sign-in {
+    font-size: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    padding-bottom: 5%;
+  }
 }
 .container-login-page .sign-in p {
   width: 48%;
   margin: auto 8%;
   font-size: 3.6rem;
 }
+@media (max-width:500px) {
+  .container-login-page .sign-in p {
+    font-size: 2rem;
+    width: 80%;
+  }
+}
 .container-login-page .sign-in .theButtons {
   width: 50%;
+}
+@media (max-width:500px) {
+  .container-login-page .sign-in .theButtons {
+    font-size: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 100%;
+  }
 }
 .container-login-page .sign-in .btn {
   display: block;
@@ -355,6 +409,19 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   height: 120vh;
+  background-color: #f1eee9;
+}
+@media (max-width:500px) {
+  .about-container {
+    background-image: none;
+    background-color: #bdbdbd;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+    background-repeat: repeat-x;
+    height: 70%;
+  }
 }
 .about-container .about-bochura {
   display: flex;
@@ -372,6 +439,30 @@ p {
   text-align: center;
   font-size: 2.6rem;
 }
+@media (max-width:500px) {
+  .about-container .about-bochura {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    padding: 4%;
+  }
+  .about-container .about-bochura h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+  .about-container .about-bochura p {
+    padding-top: 2%;
+    width: 70%;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+}
+@media (max-width:500px) {
+  .about-container .about-bochura p {
+    font-size: 2rem;
+    width: 100%;
+  }
+}
 .about-container .about-meaning {
   width: 70%;
   padding-left: 2%;
@@ -386,9 +477,40 @@ p {
   text-align: center;
   font-size: 2.6rem;
 }
+@media (max-width:500px) {
+  .about-container .about-meaning {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+  }
+  .about-container .about-meaning h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+  .about-container .about-meaning p {
+    padding-top: 2%;
+    width: 70%;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+}
 .about-container .about-meaning h1 {
   text-align: center;
   width: 70%;
+}
+@media (max-width:500px) {
+  .about-container .about-meaning h1 {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .about-container .about-meaning p {
+    font-size: 2rem;
+    width: 100%;
+  }
 }
 .about-container .about-offer {
   align-items: center;
@@ -409,8 +531,31 @@ p {
   text-align: center;
   font-size: 2.6rem;
 }
+@media (max-width:500px) {
+  .about-container .about-offer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+  }
+  .about-container .about-offer h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+  .about-container .about-offer p {
+    padding-top: 2%;
+    width: 70%;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+}
 .about-container .about-offer p {
   width: 70%;
+}
+@media (max-width:500px) {
+  .about-container .about-offer p {
+    font-size: 2rem;
+    width: 100%;
+  }
 }
 .team {
   background-color: #f1eee9;

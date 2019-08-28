@@ -1,7 +1,7 @@
 .container-home {
     .background-image(); 
     @media @mobile {
-        background-color: #f1f1f1;
+        background-color: #bdbdbd;
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -18,69 +18,89 @@
         @media @mobile {
             font-size: 3rem;
             width: 40%;
-            padding-top: 10%;
+            padding-top: 5%;
         }
-
-        .use-bochura {
-            @media @mobile {
-                display: none;
-            }
-
         p {
             font-size: 3.6rem;
             margin: 3%;
-           }    
+            @media @mobile {
+               margin-top: 5%;
+               font-size: 1.8rem;
+            }
         }
-
-        button {
-           .custom-btn(#d9d9d9, 45%, black);
-           cursor: pointer;
-           @media @mobile {
-               width: 60%;
-               height: 4vh;
-               margin-top: 20%;
-               font-size: 1.5rem;
-           }
+        a{
+            text-decoration: none;
+            button {
+            .custom-btn(#d9d9d9, 45%, black);
+                cursor: pointer;
+            }
+            @media @mobile {
+                width: 60%;
+                height: 4vh;
+                margin-top: 10%;
+                font-size: 1.5rem;
+            }
         }
-        button:hover {
-            background-color: white;
+            button:hover {
+                background-color: white;
+            }
         }
-    }
 }
 
 .container-login-page {
     .background-image(url(../images/man-woman-cooking.img.jpg));//Adjust Image. Too cut off.
     padding-top: 5%;
+    @media @mobile {
+        background-repeat: repeat;
+        height: 600px;
+    }
     .login {
         background-color: white;
         opacity: .9;
         margin-right: 3%;
         margin-left: 3%;
         padding-top: 5.5%;
-
+        @media @mobile {
+            padding-bottom: 5%;
+            margin: 5%;
+            margin-bottom: 7%;
+        }
         h2 {
             text-align: center;
             color: #E54236;
             font-size: 4rem;
             font-family: 'Fahkwang', sans-serif;
             font-weight: bold;
+            @media @mobile {
+                font-size: 2rem;
+            }
         }
     }
-
     .sign-in {
         display: flex;
         margin-top: 15%;
         padding-bottom: 14%;
-
+        @media @mobile {
+            font-size: 2rem;
+            .stack();
+            padding-bottom: 5%;
+        }
         p {
             width: 48%;
             margin: auto 8%;
             font-size: 3.6rem;
+            @media @mobile {
+                font-size: 2rem;
+                width: 80%;
+            }
         }
         .theButtons {
             width: 50%;
-
-
+            @media @mobile {
+                font-size: 2rem;
+                .stack();
+                width: 100%;       
+            }
         }
         .btn {
             .custom-btn(#d9d9d9, 60%, black);
@@ -98,26 +118,60 @@
 
 .about-container {
     .background-image(url(../images/bowl-of-food.img.jpg));
-
+    background-color: #f1eee9;
+    @media @mobile {
+        background-image: none;
+        .mobilepic();
+        background-repeat: repeat-x;
+        height: 70%;
+        
+        
+    }
     .about-bochura {
         .heading-paragraph();
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         padding: 5%;
+        @media @mobile {
+            .stack();
+            .heading-paragraph(2.6rem);
+            padding: 4%;
+        }
+        p {
+            @media @mobile{
+            font-size: 2rem;
+            width: 100%;
+         }
+        }
     }
 
     .about-meaning {
         .heading-paragraph();
         width: 70%;
         padding-left: 2%;
+        @media @mobile {
+            .stack();
+            .heading-paragraph(2.6rem);
+            width: 100%;
+            text-align: center;
+            padding: 5%;
+        }
         h1 {
             text-align: center;
             width: 70%;
+            @media @mobile {
+                width: 100%;
+            }
         }
+        p {
+            @media @mobile {
+                font-size: 2rem;
+                width: 100%;
+            }
+        }
+
     }
-
-
     .about-offer {
         .heading-paragraph();
         align-items: center;
@@ -127,9 +181,17 @@
         padding-top: 5%;
         padding-left: 2%;
         width: 70%;
+        @media @mobile {
+            .stack();
+            .heading-paragraph(2.6rem);
+        }
         p {
             width: 70%;
-        }
+            @media @mobile {
+                font-size: 2rem;
+                width: 100%; 
+            }
+        }  
     }
 
     // .the-team {
@@ -148,7 +210,6 @@
     // }
 
 }
-
 .team {
     .heading-paragraph();
     background-color: #f1eee9;
@@ -156,9 +217,6 @@
     flex-flow: column wrap;
     text-align: center;
     padding-top: 5%;
-
-
-    
     .staff {
         .heading-paragraph(2.8rem);
         display: flex;
