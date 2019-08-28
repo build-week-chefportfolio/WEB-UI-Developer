@@ -298,7 +298,7 @@ header .top-content .btn a:hover {
 }
 @media (max-width:500px) {
   .bottom .bottom-container {
-    margin: auto;
+    margin: 10%;
   }
 }
 .bottom .bottom-container h2 {
