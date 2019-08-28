@@ -219,9 +219,9 @@ header {
 @media (max-width:500px) {
   header {
     max-width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 25px;
+    height: 315px;
   }
 }
 header .top-content {
@@ -238,7 +238,6 @@ header .top-content .header-content {
 @media (max-width:500px) {
   header .top-content .header-content {
     width: 30%;
-    margin: auto;
   }
 }
 header .top-content .header-content p {
@@ -264,7 +263,9 @@ header .top-content .btn {
 }
 @media (max-width:500px) {
   header .top-content .btn {
-    width: 10%;
+    font-size: 1rem;
+    width: 20%;
+    padding: 7px;
   }
 }
 header .top-content .btn a {
@@ -281,11 +282,24 @@ header .top-content .btn a:hover {
   width: 100%;
   position: absolute;
 }
+@media (max-width:500px) {
+  .bottom {
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+}
 .bottom .bottom-container {
   background: rgba(255, 255, 255, 0.92);
   margin: 7% 10% 0%;
   width: 78%;
   height: 75%;
+}
+@media (max-width:500px) {
+  .bottom .bottom-container {
+    margin: auto;
+  }
 }
 .bottom .bottom-container h2 {
   color: #E54236;
@@ -293,12 +307,25 @@ header .top-content .btn a:hover {
   padding: 4%;
   font-size: 3.9rem;
 }
+@media (max-width:500px) {
+  .bottom .bottom-container h2 {
+    font-size: 3rem;
+  }
+}
 .bottom .bottom-container .text-form {
   display: flex;
   justify-content: space-around;
   align-content: center;
   width: 85%;
   margin: 7% 10% 2%;
+}
+@media (max-width:500px) {
+  .bottom .bottom-container .text-form {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+  }
 }
 .bottom .bottom-container .text-form p {
   font-size: 3.2rem;
@@ -308,6 +335,14 @@ header .top-content .btn a:hover {
 @media (max-width: 1024px) {
   .bottom .bottom-container .text-form p {
     font-size: 2.4rem;
+  }
+}
+@media (max-width:500px) {
+  .bottom .bottom-container .text-form p {
+    width: 100%;
+    font-size: 2.4rem;
+    text-align: center;
+    padding-bottom: 10px;
   }
 }
 .bottom .bottom-container .text-form .btn {
@@ -328,6 +363,18 @@ header .top-content .btn a:hover {
 }
 .bottom .bottom-container .text-form .btn button:hover {
   color: #F2463A;
+}
+@media (max-width:500px) {
+  .bottom .bottom-container .text-form .btn button {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width:500px) {
+  .bottom .bottom-container .text-form .btn {
+    width: 100%;
+  }
 }
 .about-top {
   background: url(../img/food.jpg);

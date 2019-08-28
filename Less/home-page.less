@@ -7,9 +7,9 @@ header{
   width:100%;
   @media @phone {
     max-width:100%;
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
-     height:25px;
+    height:315px;
   }
 
   .top-content{
@@ -26,7 +26,6 @@ header{
       margin:10% 5% 0%;
       @media @phone{
         width:30%;
-        margin:auto;
       }
       p{
         font-size:2.8rem;
@@ -49,7 +48,9 @@ header{
         align-content: center;
         text-align: center;
         @media @phone{
-          width:10%;
+          font-size:1rem;
+          width:20%;
+          padding:7px;
         }
           a {
             text-decoration: none;
@@ -71,21 +72,37 @@ header{
   background-size:cover;
   width:100%;
   position: absolute;
+  @media @phone{
+    max-width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:auto;
+  }
   .bottom-container{
     background:rgba(255, 255, 255, 0.92);
     margin:7% 10% 0%;
     width:78%;
     height:75%;
+    @media @phone{
+      margin:auto;
+    }
     h2{
       color:#E54236;
       text-align: center;
       padding:4%;
       font-size:3.9rem;
+      @media @phone{
+        font-size:3.0rem;
+      }
     }
     .text-form{
       .custom-layout(space-around, center);
       width:85%;
       margin:7% 10% 2%;
+      @media @phone{
+        .custom-layout(space-around, center);
+        flex-direction: column;
+      }
      p{
       font-size:3.2rem;
       width:58%;
@@ -93,7 +110,12 @@ header{
       @media (max-width:1024px) {
         font-size:2.4rem;
       }
-
+      @media @phone{
+        width:100%;
+        font-size:2.4rem;
+        text-align: center;
+        padding-bottom:10px;
+      }
     }
     .btn{
       .custom-layout(space-evenly, center);
@@ -102,6 +124,9 @@ header{
       button{
         .btn();
         }
+      @media @phone{
+        width:100%;
+      }
       }
     }
   }
