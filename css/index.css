@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Fahkwang';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fahkwang Regular'), local('Fahkwang-Regular'), url(https://fonts.gstatic.com/s/fahkwang/v3/Noax6Uj3zpmBOgbNpOqIuLk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heptaslab/v1/ea8JadoyU_jkHdalebHvyWVNdYoIsHe5HvkV5wfcaZQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heptaslab/v1/ea8JadoyU_jkHdalebHvyWVNdYoIsHe5HvkV5wfcaZQ.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,6 +152,12 @@ table {
 }
 html {
   font-size: 62.5%;
+  border: 1px solid grey;
+  background-color: #303030;
+}
+html,
+body {
+  scroll-behavior: smooth;
 }
 h2 {
   font-size: 3.2rem;
@@ -143,7 +170,503 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 100%;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+.navBar {
+  background-color: #303030;
+  color: #ffffff;
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: space-between;
+  padding: 2%;
+}
+@media (max-width:500px) {
+  .navBar {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0;
+    font-size: 1.8rem;
+  }
+}
+.navBar h1 {
+  color: #f1f1f1;
+  font-family: 'Hepta Slab', serif;
+  font-size: 3.6rem;
+}
+@media (max-width:500px) {
+  .navBar h1 {
+    padding-top: 2%;
+    font-size: 2.5rem;
+  }
+}
+.navBar nav {
+  padding-top: 0.5%;
+  text-align: right;
+  width: 50%;
+}
+@media (max-width:500px) {
+  .navBar nav {
+    width: 50%;
+    padding: 2% 0%;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.navBar nav a {
+  color: #ffffff;
+  padding: 0 3.7%;
+  text-decoration: none;
+}
+@media (max-width:500px) {
+  .navBar nav a {
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 5%;
+    padding: 0;
+    margin-right: 6%;
+  }
+}
+.navBar nav a:hover {
+  background-color: #ffffff;
+  color: #303030;
+  border-radius: 20px;
+}
+@media (max-width:500px) {
+  .navBar nav a:hover {
+    border-radius: 15px;
+  }
+}
+.container-home {
+  background-image: url("../images/bohcura-background.img.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+}
+@media (max-width:500px) {
+  .container-home {
+    background-color: #bdbdbd;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+  }
+}
+.container-home .intro {
+  color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  font-style: bold;
+  width: 35%;
+  padding-top: 10%;
+  padding-left: 2.5%;
+}
+@media (max-width:500px) {
+  .container-home .intro {
+    font-size: 3rem;
+    width: 40%;
+    padding-top: 5%;
+  }
+}
+.container-home .intro p {
+  font-size: 3.6rem;
+  margin: 3%;
+}
+@media (max-width:500px) {
+  .container-home .intro p {
+    margin-top: 5%;
+    font-size: 1.8rem;
+  }
+}
+.container-home .intro a {
+  text-decoration: none;
+}
+.container-home .intro a button {
+  display: block;
+  background-color: #d9d9d9;
+  color: black;
+  margin: 0 8px 18px;
+  width: 45%;
+  height: 8vh;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width:500px) {
+  .container-home .intro a button {
+    width: 60%;
+    height: 4vh;
+    margin-top: 10%;
+    font-size: 1.5rem;
+  }
+}
+.container-home .intro button:hover {
+  background-color: white;
+}
+.container-login-page {
+  background-image: url(../images/man-woman-cooking.img.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  padding-top: 5%;
+}
+@media (max-width:500px) {
+  .container-login-page {
+    background-repeat: repeat;
+    height: 600px;
+  }
+}
+.container-login-page .login {
+  background-color: white;
+  opacity: 0.9;
+  margin-right: 3%;
+  margin-left: 3%;
+  padding-top: 5.5%;
+}
+@media (max-width:500px) {
+  .container-login-page .login {
+    padding-bottom: 5%;
+    margin: 5%;
+    margin-bottom: 7%;
+  }
+}
+.container-login-page .login h2 {
+  text-align: center;
+  color: #E54236;
+  font-size: 4rem;
+  font-family: 'Fahkwang', sans-serif;
+  font-weight: bold;
+}
+@media (max-width:500px) {
+  .container-login-page .login h2 {
+    font-size: 2rem;
+  }
+}
+.container-login-page .sign-in {
+  display: flex;
+  margin-top: 15%;
+  padding-bottom: 14%;
+}
+@media (max-width:500px) {
+  .container-login-page .sign-in {
+    font-size: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    padding-bottom: 5%;
+  }
+}
+.container-login-page .sign-in p {
+  width: 48%;
+  margin: auto 8%;
+  font-size: 3.6rem;
+}
+@media (max-width:500px) {
+  .container-login-page .sign-in p {
+    font-size: 2rem;
+    width: 80%;
+  }
+}
+.container-login-page .sign-in .theButtons {
+  width: 50%;
+}
+@media (max-width:500px) {
+  .container-login-page .sign-in .theButtons {
+    font-size: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 100%;
+  }
+}
+.container-login-page .sign-in .btn {
+  display: block;
+  background-color: #d9d9d9;
+  color: black;
+  margin: 0 8px 18px;
+  width: 60%;
+  height: 8vh;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 4%;
+  align-content: center;
+}
+.container-login-page .sign-in .btn:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.about-container {
+  background-image: url(../images/bowl-of-food.img.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  background-color: #f1eee9;
+}
+@media (max-width:500px) {
+  .about-container {
+    background-image: none;
+    background-color: #bdbdbd;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+    background-repeat: repeat-x;
+    height: 70%;
+  }
+}
+.about-container .about-bochura {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 5%;
+}
+.about-container .about-bochura h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.about-container .about-bochura p {
+  padding-top: 2%;
+  width: 70%;
+  text-align: center;
+  font-size: 2.6rem;
+}
+@media (max-width:500px) {
+  .about-container .about-bochura {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    padding: 4%;
+  }
+  .about-container .about-bochura h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+  .about-container .about-bochura p {
+    padding-top: 2%;
+    width: 70%;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+}
+@media (max-width:500px) {
+  .about-container .about-bochura p {
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+.about-container .about-meaning {
+  width: 70%;
+  padding-left: 2%;
+}
+.about-container .about-meaning h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.about-container .about-meaning p {
+  padding-top: 2%;
+  width: 70%;
+  text-align: center;
+  font-size: 2.6rem;
+}
+@media (max-width:500px) {
+  .about-container .about-meaning {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+  }
+  .about-container .about-meaning h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+  .about-container .about-meaning p {
+    padding-top: 2%;
+    width: 70%;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+}
+.about-container .about-meaning h1 {
+  text-align: center;
+  width: 70%;
+}
+@media (max-width:500px) {
+  .about-container .about-meaning h1 {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .about-container .about-meaning p {
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+.about-container .about-offer {
+  align-items: center;
+  align-content: flex-start;
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 5%;
+  padding-left: 2%;
+  width: 70%;
+}
+.about-container .about-offer h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.about-container .about-offer p {
+  padding-top: 2%;
+  width: 70%;
+  text-align: center;
+  font-size: 2.6rem;
+}
+@media (max-width:500px) {
+  .about-container .about-offer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 100%;
+    padding: 5%;
+  }
+  .about-container .about-offer h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+  .about-container .about-offer p {
+    padding-top: 2%;
+    width: 70%;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+}
+.about-container .about-offer p {
+  width: 70%;
+}
+@media (max-width:500px) {
+  .about-container .about-offer p {
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+.team {
+  background-color: #f1eee9;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  padding-top: 5%;
+}
+.team h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.team p {
+  padding-top: 2%;
+  width: 70%;
+  text-align: center;
+  font-size: 2.6rem;
+}
+@media (max-width:500px) {
+  .team {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+  }
+}
+.team .staff {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+.team .staff h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.team .staff p {
+  padding-top: 2%;
+  width: 70%;
+  text-align: center;
+  font-size: 2.6rem;
+}
+.team .staff h2 {
+  font-size: 2rem;
+  padding-top: 2%;
+}
+.team .staff .card {
+  width: 33%;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  margin: 2%;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 30px;
+  border: 2px inset grey;
+  padding: 3%;
+}
+@media (max-width:500px) {
+  .team .staff .card {
+    width: 80%;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    border: 2px inset grey;
+    padding: 3%;
+  }
+}
+.team .staff .card p {
+  width: 100%;
+  padding: 5%;
+}
+@media (max-width:500px) {
+  .team .staff .card p {
+    width: 100%;
+    padding: 5%;
+  }
+}
+.team .staff .card .github {
+  display: block;
+  background-color: #d9d9d9;
+  color: black;
+  margin: 0 8px 18px;
+  width: 40%;
+  height: 8vh;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-left: 15%;
+  margin-top: 5%;
+  justify-content: center;
+  margin: 0;
+  background-color: #ffffff;
+}
+@media (max-width:500px) {
+  .team .staff .card .github {
+    justify-content: center;
+    margin: 0;
+    background-color: #ffffff;
+  }
+}
+.team .staff .card .github:hover {
+  background-color: white;
+  cursor: pointer;
+  background-color: #f2463a;
+}
+@media (max-width:500px) {
+  .team .staff .card .github:hover {
+    background-color: #f2463a;
+  }
 }

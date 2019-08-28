@@ -1,0 +1,52 @@
+
+.background-image(@url:url("../images/bohcura-background.img.jpg"); ) {
+    background-image: @url;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+.custom-btn (@bgcolor:#d9d9d9, @width:20%, @font-color:black) {
+    display: block;
+    background-color: @bgcolor;
+    color: @font-color;
+    margin: 0 8px 18px;
+    width: @width;
+    height: 8vh;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+.heading-paragraph (@font-size:3.6rem) {
+    h1 {
+        font-size: @font-size;
+        font-weight: bold;
+    }
+    p {
+        padding-top: 2%;
+        width: 70%;
+        text-align: center;
+        font-size: 2.6rem;
+    }
+}
+
+.stack(){ 
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.size () {
+    width: 50%;
+    padding: 2% 0%;   
+}
+
+.mobilepic () {
+        background-color: #bdbdbd;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 320px;
+}
