@@ -52,9 +52,6 @@ header{
   background-size:cover;
   width:100%;
   position: absolute;
-  // @media (min-width:1440px){
-  //   margin-top: 100px;
-  // }
   .bottom-container{
     background:rgba(255, 255, 255, 0.92);
     margin:7% 10% 0%;
@@ -67,8 +64,7 @@ header{
       font-size:3.9rem;
     }
     .text-form{
-      display:flex;
-      justify-content: space-around;
+      .custom-layout(space-around, center);
       width:85%;
       margin:7% 10% 2%;
      p{
@@ -81,21 +77,11 @@ header{
 
     }
     .btn{
-      display:flex;
-      justify-content: space-evenly;
+      .custom-layout(space-evenly, center);
       flex-direction: column;
       width:30%;
       button{
-        padding:10%;
-        text-align: center;
-        background-color: @deep-gray;
-        color:@header-nav;
-        border-radius:4px;
-        width:100%;
-        font-size:2.2rem;
-        &:hover{
-          color:@salmon;
-        }
+        .btn();
         }
       }
     }
