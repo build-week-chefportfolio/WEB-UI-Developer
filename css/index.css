@@ -444,7 +444,6 @@ header .top-content .btn a:hover {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  border: 1px solid red;
 }
 .bottom-section h1 {
   color: #303030;
@@ -456,26 +455,48 @@ header .top-content .btn a:hover {
   color: #A63028;
   font-weight: bold;
 }
-.bottom-section .box-format {
+.bottom-section .box {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-content: flex-start;
   width: 100%;
   flex-wrap: wrap;
   margin: 0 auto;
+  flex-direction: row;
+  padding: 2%;
 }
-.bottom-section .box-format .bio {
+.bottom-section .box .bio {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  width: 33%;
+  width: 90%;
+  align-content: flex-end;
   margin: 0 auto;
 }
-.bottom-section .box-format .bio .name {
+.bottom-section .box .bio .name {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10%;
+  padding: 2%;
+  border: 1px solid black;
+  width: 75%;
+  background: #D9D9D9;
+  border-radius: 50px;
+  margin: 0% 1%;
+}
+.bottom-section .box .bio .name p {
+  padding: 10% 0%;
+  font-size: 1.6rem;
+}
+.bottom-section .box .bio .name .git-button {
+  padding: 4%;
+  background: #A63028;
+  font-size: 1.6rem;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  border-radius: 6px;
+  color: #F1F1F1;
+  text-decoration: none;
 }
