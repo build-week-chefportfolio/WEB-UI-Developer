@@ -299,7 +299,7 @@ p {
   cursor: pointer;
 }
 @media (max-width:500px) {
-  .container-home .intro a {
+  .container-home .intro a button {
     width: 60%;
     height: 4vh;
     margin-top: 10%;
@@ -536,6 +536,8 @@ p {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
+    width: 100%;
+    padding: 5%;
   }
   .about-container .about-offer h1 {
     font-size: 2.6rem;
@@ -574,6 +576,13 @@ p {
   text-align: center;
   font-size: 2.6rem;
 }
+@media (max-width:500px) {
+  .team {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+  }
+}
 .team .staff {
   display: flex;
   flex-flow: row wrap;
@@ -601,7 +610,32 @@ p {
   display: flex;
   flex-flow: column wrap;
   align-content: center;
-  margin-top: 5%;
+  margin: 2%;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 30px;
+  border: 2px inset grey;
+  padding: 3%;
+}
+@media (max-width:500px) {
+  .team .staff .card {
+    width: 80%;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    border: 2px inset grey;
+    padding: 3%;
+  }
+}
+.team .staff .card p {
+  width: 100%;
+  padding: 5%;
+}
+@media (max-width:500px) {
+  .team .staff .card p {
+    width: 100%;
+    padding: 5%;
+  }
 }
 .team .staff .card .github {
   display: block;
@@ -615,8 +649,24 @@ p {
   text-align: center;
   margin-left: 15%;
   margin-top: 5%;
+  justify-content: center;
+  margin: 0;
+  background-color: #ffffff;
+}
+@media (max-width:500px) {
+  .team .staff .card .github {
+    justify-content: center;
+    margin: 0;
+    background-color: #ffffff;
+  }
 }
 .team .staff .card .github:hover {
   background-color: white;
   cursor: pointer;
+  background-color: #f2463a;
+}
+@media (max-width:500px) {
+  .team .staff .card .github:hover {
+    background-color: #f2463a;
+  }
 }
