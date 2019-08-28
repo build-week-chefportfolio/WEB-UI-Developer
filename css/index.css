@@ -438,3 +438,44 @@ header .top-content .btn a:hover {
   width: 106%;
   margin: 3% 14% 5%;
 }
+.bottom-section {
+  background: #F2EFEA;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.bottom-section h1 {
+  color: #303030;
+  font-size: 3.6rem;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-family: 'Special Elite', cursive;
+  color: #A63028;
+  font-weight: bold;
+}
+.bottom-section .box-format {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.bottom-section .box-format .bio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 33%;
+  margin: 0 auto;
+}
+.bottom-section .box-format .bio .name {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10%;
+}

@@ -58,3 +58,40 @@
   }
 
 }
+.bottom-section{
+  background:#F2EFEA;
+  // width:100%;
+  .custom-layout(center, center);
+  flex-direction: column;
+  border:1px solid red;
+  h1{
+    color:@header-nav;
+    font-size:3.6rem;
+    display:flex;
+    justify-content: center;
+    padding:1%;
+    font-family: @ang;
+    color:@maroon;
+    font-weight:bold;
+  }
+  .box-format{
+    .custom-layout(space-between, center);
+    width:100%;
+    flex-wrap:wrap;
+    margin:0 auto;
+    .bio{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width:33%;
+      margin:0 auto;
+      .name{
+        .custom-layout(space-between, center);
+        flex-direction: row;
+        flex-wrap:wrap;
+        padding:10%;
+        // width:30%;
+      }
+    }
+  }
+}
