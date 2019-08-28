@@ -381,32 +381,35 @@ header .top-content .btn a:hover {
   height: 100vh;
   background-size: cover;
   width: 100%;
+  height: auto;
 }
 .about-top .about-container-top {
-  margin-left: 36%;
+  margin-left: 40%;
   width: 50%;
-  padding: 5%;
+  padding: 4%;
 }
 .about-top .about-container-top h1 {
   color: #303030;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   display: flex;
   justify-content: center;
   padding: 1%;
   font-family: 'Special Elite', cursive;
   color: #A63028;
+  font-weight: bold;
 }
 .about-top .about-container-top p {
   display: flex;
   justify-content: center;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-family: 'Special Elite', cursive;
+  font-weight: bold;
 }
 .about-top .about-content {
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 60%;
+  width: 53%;
   flex-direction: column;
 }
 .about-top .about-content h2 {
@@ -417,6 +420,7 @@ header .top-content .btn a:hover {
   color: #303030;
   font-family: 'Special Elite', cursive;
   color: #A63028;
+  font-size: 2.9rem;
 }
 .about-top .about-content p {
   font-size: 2.1rem;
@@ -424,9 +428,13 @@ header .top-content .btn a:hover {
 }
 .about-top .about-content .about-what {
   margin: 1% 21%;
-  width: 84%;
+  width: 100%;
 }
 .about-top .about-content .about-word {
   width: 88%;
-  margin: 12% 10%;
+  margin: 6% 10% 5%;
+}
+.about-top .about-content .about-help {
+  width: 106%;
+  margin: 3% 14% 5%;
 }
