@@ -177,20 +177,53 @@ p {
   justify-content: space-between;
   padding: 2%;
 }
+@media (max-width:500px) {
+  .navBar {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
 .navBar h1 {
   color: #f1f1f1;
   font-family: 'Hepta Slab', serif;
   font-size: 3.6rem;
+}
+@media (max-width:500px) {
+  .navBar h1 {
+    padding-top: 2%;
+  }
 }
 .navBar nav {
   padding-top: 0.5%;
   text-align: right;
   width: 50%;
 }
+@media (max-width:500px) {
+  .navBar nav {
+    width: 50%;
+    padding: 2% 0%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+  }
+}
 .navBar nav a {
   color: #ffffff;
   padding: 0 3.7%;
   text-decoration: none;
+}
+@media (max-width:500px) {
+  .navBar nav a {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 5%;
+  }
 }
 .navBar nav a:hover {
   background-color: #ffffff;
@@ -203,6 +236,14 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   height: 120vh;
+}
+@media (max-width:500px) {
+  .container-home {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+  }
 }
 .container-home .intro {
   color: #ffffff;
@@ -222,7 +263,7 @@ p {
   background-color: #d9d9d9;
   color: black;
   margin: 0 8px 18px;
-  width: 200px;
+  width: 45%;
   height: 8vh;
   border-radius: 5px;
   font-size: 1.8rem;
@@ -307,12 +348,32 @@ p {
   text-align: center;
   font-size: 2.6rem;
 }
+.about-container .about-meaning {
+  width: 70%;
+  padding-left: 2%;
+}
+.about-container .about-meaning h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.about-container .about-meaning p {
+  padding-top: 2%;
+  width: 70%;
+  text-align: center;
+  font-size: 2.6rem;
+}
+.about-container .about-meaning h1 {
+  text-align: center;
+  width: 70%;
+}
 .about-container .about-offer {
+  align-items: center;
+  align-content: flex-start;
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  width: 50%;
   padding-top: 5%;
+  padding-left: 2%;
+  width: 70%;
 }
 .about-container .about-offer h1 {
   font-size: 3.6rem;
@@ -325,7 +386,7 @@ p {
   font-size: 2.6rem;
 }
 .about-container .about-offer p {
-  width: 85%;
+  width: 70%;
 }
 .team {
   background-color: #f1eee9;

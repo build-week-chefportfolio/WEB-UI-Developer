@@ -5,21 +5,46 @@
     font-size: 2.5rem;
     justify-content: space-between;
     padding: 2%;
+    @media @mobile {
+        .stack();
+        width: 100%;
+        text-align: center;
+        
+    }
     
     h1 {
         color: #f1f1f1;
         font-family: 'Hepta Slab', serif; 
         font-size: 3.6rem;
+        @media @mobile {
+            padding-top: 2%;
+        }
     }
     nav {
         padding-top: .5%;
         text-align: right;
         width: 50%;  
+        // @media @mobile {
+        //     .stack();
+        //     width: 100%;
+        // }
+
+        @media @mobile {
+            .size();
+            .stack();
+        }
+
         
         a{
             color: #ffffff;
             padding: 0 3.7%;
             text-decoration: none;
+            @media @mobile {
+                .stack();     
+                text-align: center;
+                line-height: 1.5;   
+                padding-top: 5%;    
+            }
         }
 
         a:hover {

@@ -1,4 +1,12 @@
-.custom-btn (@bgcolor:#d9d9d9, @width:200px, @font-color:black) {
+
+.background-image(@url:url("../images/bohcura-background.img.jpg"); ) {
+    background-image: @url;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+.custom-btn (@bgcolor:#d9d9d9, @width:20%, @font-color:black) {
     display: block;
     background-color: @bgcolor;
     color: @font-color;
@@ -10,13 +18,6 @@
     text-align: center;
 }
 
-.background-image(@url:url("../images/bohcura-background.img.jpg"); ) {
-    background-image: @url;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 120vh;
-}
 
 .heading-paragraph (@font-size:3.6rem) {
     h1 {
@@ -29,4 +30,15 @@
         text-align: center;
         font-size: 2.6rem;
     }
+}
+
+.stack(){ 
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.size () {
+    width: 50%;
+    padding: 2% 0%;   
 }
