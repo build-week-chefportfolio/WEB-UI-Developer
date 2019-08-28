@@ -207,10 +207,10 @@ header .top-content .btn {
 }
 header .top-content .btn a {
   text-decoration: none;
-  color: black;
+  color: #303030;
 }
 header .top-content .btn a:hover {
-  color: blue;
+  color: #F2463A;
 }
 .bottom {
   background: url(../img/john2.jpg);
@@ -234,7 +234,7 @@ header .top-content .btn a:hover {
 .bottom .bottom-container .text-form {
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 85%;
   margin: 7% 10% 2%;
 }
 .bottom .bottom-container .text-form p {
@@ -251,14 +251,19 @@ header .top-content .btn a:hover {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
 }
 .bottom .bottom-container .text-form .btn button {
   padding: 10%;
   text-align: center;
   background-color: #D9D9D9;
+  color: #303030;
   border-radius: 4px;
   width: 100%;
+  font-size: 2.2rem;
+}
+.bottom .bottom-container .text-form .btn button:hover {
+  color: #F2463A;
 }
 .about-top {
   background: url(../img/food.jpg);
