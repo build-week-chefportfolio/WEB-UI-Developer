@@ -1,10 +1,10 @@
 .navBar { 
     background-color: #303030;
-    color: #ffffff;
+    color: #f1f1f1;
     display: flex;
     font-size: 2.5rem;
     justify-content: space-between;
-    padding: 3.7%;
+    padding: 3%;
     @media (max-width:1000px) {
         font-size: 2.2rem;    
     }
@@ -19,23 +19,27 @@
         color: #f1f1f1;
         font-family: 'Hepta Slab', serif; 
         font-size: 3.6rem;
+        font-weight: bold;
         @media @mobile {
             padding-top: 2%;
             font-size: 2.5rem;
         }
     }
     nav {
+        font-family: @navFont;
+        font-size: 2.2rem;
+        font-weight: bold;
         padding-top: .5%;
         text-align: right;
         width: 60%;  
         @media @mobile {
             .size();
-            // .stack();
             width: 100%;
             justify-content: space-between;
         }   
         a {
             color: #ffffff;
+            font-family: @navFont;
             padding: 0 3%;
             text-decoration: none;
             @media (max-width:1000px) {
