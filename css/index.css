@@ -383,10 +383,27 @@ header .top-content .btn a:hover {
   width: 100%;
   height: auto;
 }
+@media (max-width:500px) {
+  .about-top {
+    max-width: 100%;
+    background-size: cover;
+  }
+}
 .about-top .about-container-top {
   margin-left: 32%;
   width: 50%;
   padding: 4%;
+}
+@media (max-width:500px) {
+  .about-top .about-container-top {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .about-top .about-container-top h1 {
   color: #303030;
@@ -398,6 +415,11 @@ header .top-content .btn a:hover {
   color: #A63028;
   font-weight: bold;
 }
+@media (max-width:500px) {
+  .about-top .about-container-top h1 {
+    font-size: 2.4rem;
+  }
+}
 .about-top .about-container-top p {
   display: flex;
   justify-content: center;
@@ -405,12 +427,27 @@ header .top-content .btn a:hover {
   font-family: 'Special Elite', cursive;
   font-weight: bold;
 }
+@media (max-width:500px) {
+  .about-top .about-container-top p {
+    font-size: 1.6rem;
+  }
+}
 .about-top .about-content {
   display: flex;
   justify-content: center;
   align-content: center;
   width: 53%;
   flex-direction: column;
+}
+@media (max-width:500px) {
+  .about-top .about-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
 }
 .about-top .about-content h2 {
   display: flex;
@@ -422,21 +459,49 @@ header .top-content .btn a:hover {
   color: #A63028;
   font-size: 2.9rem;
 }
+@media (max-width:500px) {
+  .about-top .about-content h2 {
+    font-size: 2.2rem;
+  }
+}
 .about-top .about-content p {
   font-size: 2.1rem;
   font-family: 'Special Elite', cursive;
+}
+@media (max-width:500px) {
+  .about-top .about-content p {
+    font-size: 1.7rem;
+  }
 }
 .about-top .about-content .about-what {
   margin: 1% 21%;
   width: 100%;
 }
+@media (max-width:500px) {
+  .about-top .about-content .about-what {
+    width: 80%;
+    margin: auto;
+  }
+}
 .about-top .about-content .about-word {
   width: 88%;
   margin: 6% 10% 5%;
 }
+@media (max-width:500px) {
+  .about-top .about-content .about-word {
+    width: 80%;
+    margin: 15px auto;
+  }
+}
 .about-top .about-content .about-help {
   width: 106%;
   margin: 3% 14% 5%;
+}
+@media (max-width:500px) {
+  .about-top .about-content .about-help {
+    width: 80%;
+    margin: 15px auto;
+  }
 }
 .bottom-section {
   background: #F2EFEA;
@@ -444,6 +509,15 @@ header .top-content .btn a:hover {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+}
+@media (max-width:500px) {
+  .bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
 }
 .bottom-section h1 {
   color: #303030;
@@ -465,12 +539,29 @@ header .top-content .btn a:hover {
   flex-direction: row;
   padding: 2%;
 }
+@media (max-width:500px) {
+  .bottom-section .box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+}
 .bottom-section .box .bio {
   display: flex;
   justify-content: center;
   width: 90%;
   align-content: flex-end;
   margin: 0 auto;
+}
+@media (max-width:500px) {
+  .bottom-section .box .bio {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .bottom-section .box .bio .name {
   display: flex;
@@ -485,12 +576,30 @@ header .top-content .btn a:hover {
   border-radius: 50px;
   margin: 0% 1%;
 }
+@media (max-width:500px) {
+  .bottom-section .box .bio .name {
+    width: 80%;
+    margin: auto;
+    padding: 6%;
+  }
+}
 .bottom-section .box .bio .name h2 {
   font-size: 2.4rem;
+}
+@media (max-width:500px) {
+  .bottom-section .box .bio .name h2 {
+    font-size: 1.7rem;
+    margin: 0 auto;
+  }
 }
 .bottom-section .box .bio .name p {
   padding: 10% 0%;
   font-size: 1.6rem;
+}
+@media (max-width:500px) {
+  .bottom-section .box .bio .name p {
+    font-size: 1.4rem;
+  }
 }
 .bottom-section .box .bio .name .git-button {
   padding: 4%;

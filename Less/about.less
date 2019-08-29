@@ -4,10 +4,21 @@
   background-size:cover;
   width:100%;
   height:auto;
+  @media @phone{
+    max-width:100%;
+    background-size:cover;
+  }
   .about-container-top {
     margin-left:32%;
     width:50%;
     padding:4%;
+    @media @phone{
+      width:80%;
+      margin:auto;
+      .custom-layout(center, center);
+      flex-direction: column;
+        text-align: center;
+    }
     h1{
       color:@header-nav;
       font-size:3.6rem;
@@ -17,6 +28,10 @@
       font-family: @ang;
       color:@maroon;
       font-weight:bold;
+      @media @phone{
+        font-size:2.4rem;
+        
+      }
     }
     p{
       display:flex;
@@ -24,12 +39,22 @@
       font-size:2.1rem;
       font-family: @ang;
       font-weight:bold;
+      @media @phone{
+        font-size:1.6rem;
+      }
     }
+
   }
   .about-content{
     .custom-layout(center, center);
      width:53%;
      flex-direction: column;
+     @media @phone{
+       .custom-layout(center, center);
+       flex-direction: column;
+       margin:auto;
+       width:100%;
+     }
 
      h2{
        .custom-layout(center,center);
@@ -38,22 +63,40 @@
        font-family: @ang;
        color:@maroon;
        font-size:2.9rem;
+       @media @phone{
+         font-size:2.2rem;
+       }
      }
      p{
        font-size:2.1rem;
        font-family: @ang;
+       @media @phone{
+         font-size:1.7rem;
+       }
      }
      .about-what{
        margin:1% 21%;
        width:100%;
+       @media @phone{
+         width:80%;
+         margin:auto;
+       }
      }
      .about-word{
        width:88%;
        margin:6% 10% 5%;
+       @media @phone{
+         width:80%;
+         margin:15px auto;
+       }
      }
      .about-help{
        width:106%;
        margin: 3% 14% 5%;
+       @media @phone{
+         width:80%;
+         margin:15px auto;
+       }
      }
   }
 
@@ -63,6 +106,11 @@
   // width:100%;
   .custom-layout(center, center);
   flex-direction: column;
+  @media @phone{
+    width:100%;
+    .custom-layout(center, center);
+    flex-direction: column;
+  }
   h1{
     color:@header-nav;
     font-size:3.6rem;
@@ -80,6 +128,10 @@
     margin:0 auto;
     flex-direction: row;
     padding:2%;
+    @media @phone{
+      .custom-layout(center, center);
+      flex-direction: column;
+    }
     .bio{
       .bio();
       .bottom-panel{
