@@ -1,5 +1,8 @@
 .container-home {
     .background-image(); 
+    @media (max-width:1000px) {
+        height: 660px;
+    }
     @media @mobile {
         background-color: #bdbdbd;
         background-size: 100%;
@@ -12,35 +15,41 @@
         display: flex;
         flex-flow: column;
         font-style: bold;
-        width: 35%;
         padding-top: 10%;
         padding-left: 2.5%;
+        width: 38%;
+        @media (max-width:1000px) {
+            width: 45%;
+        }
         @media @mobile {
             font-size: 3rem;
-            width: 40%;
             padding-top: 5%;
+            width: 50%;
         }
         p {
+            font-family: @pFont;
             font-size: 3.6rem;
             margin: 3%;
+            @media (max-width:1000px) {
+                font-size: 3.2rem;
+            }
             @media @mobile {
-               margin-top: 5%;
-               font-size: 1.8rem;
+                margin-top: 5%;
+                font-size: 1.8rem;
             }
         }
-        a{
+        a {
             text-decoration: none;
             button {
-            .custom-btn(#d9d9d9, 45%, black);
+                .custom-btn(#d9d9d9, 45%, black);
                 cursor: pointer;
                 @media @mobile {
-                    width: 60%;
-                    height: 4vh;
-                    margin-top: 10%;
                     font-size: 1.5rem;
+                    height: 5vh;
+                    margin-top: 10%;
+                    width: 60%;
                 }
             }
-
         }
             button:hover {
                 background-color: white;
@@ -48,29 +57,38 @@
     }
 }
 .container-login-page {
-    .background-image(url(../images/man-woman-cooking.img.jpg));//Adjust Image. Too cut off.
-    padding-top: 5%;
+    .background-image(url(../images/man-woman-cooking.img.jpg));
+    @media (max-width: 1000px) {
+        height: 700px;
+        padding-top: 2%;
+    }
     @media @mobile {
         background-repeat: repeat;
         height: 600px;
     }
     .login {
         background-color: white;
-        opacity: .9;
         margin-right: 3%;
         margin-left: 3%;
+        opacity: .9;
         padding-top: 5.5%;
+        @media (max-width: 1000px) {
+            margin-top: 3%;
+        }
         @media @mobile {
-            padding-bottom: 5%;
             margin: 5%;
             margin-bottom: 7%;
+            padding-bottom: 5%;
         }
         h2 {
-            text-align: center;
             color: #E54236;
-            font-size: 4rem;
             font-family: 'Fahkwang', sans-serif;
+            font-size: 4rem;
             font-weight: bold;
+            text-align: center;
+            @media (max-width: 1000px) {
+                font-size: 3rem;
+            }
             @media @mobile {
                 font-size: 2rem;
             }
@@ -80,15 +98,20 @@
         display: flex;
         margin-top: 15%;
         padding-bottom: 14%;
+        @media (max-width: 1000px) {
+            margin-top: 5%;} 
         @media @mobile {
-            font-size: 2rem;
             .stack();
+            font-size: 2rem;
             padding-bottom: 5%;
         }
         p {
-            width: 48%;
-            margin: auto 8%;
             font-size: 3.6rem;
+            margin: auto 8%;
+            width: 48%;
+            @media (max-width: 1000px) {
+                font-size: 3rem;
+            }
             @media @mobile {
                 font-size: 2rem;
                 width: 80%;
@@ -96,16 +119,19 @@
         }
         .theButtons {
             width: 50%;
+            @media (max-width: 1000px) {
+                margin-top: 5%;
+            }
             @media @mobile {
-                font-size: 2rem;
                 .stack();
+                font-size: 2rem;
                 width: 100%;       
             }
         }
         .btn {
-            .custom-btn(#d9d9d9, 60%, black);
-            margin-top: 4%;
+            .custom-btn();
             align-content: center;
+            margin-top: 4%;   
         }
         .btn:hover {
             background-color: white;
@@ -118,25 +144,37 @@
 .about-container {
     .background-image(url(../images/bowl-of-food.img.jpg));
     background-color: #f1eee9;
+    @media (max-width:1000px) {
+        height: 665px;
+        padding-bottom: 70px;
+    }
     @media @mobile {
-        background-image: none;
         .mobilepic();
+        background-image: none;
         background-repeat: repeat-x;
         height: 70%;    
     }
     .about-bochura {
         .heading-paragraph();
+        align-items: center;
         display: flex;
         flex-flow: column wrap;
-        align-items: center;
         padding: 5%;
+        @media (max-width:1000px) {
+            .heading-paragraph(3.5rem);
+            padding: 3%;
+        }
         @media @mobile {
             .stack();
             .heading-paragraph(2.6rem);
             padding: 4%;
         }
         p {
-            @media @mobile{
+            font-family: @pFont;
+            @media (max-width:1000px) {
+                font-size: 2rem;
+            }
+            @media @mobile {
             font-size: 2rem;
             width: 100%;
          }
@@ -146,12 +184,17 @@
         .heading-paragraph();
         width: 70%;
         padding-left: 2%;
+        @media (max-width:1000px) {
+            .heading-paragraph(3.5rem);
+            padding: 3%;
+            padding-top: 0%;
+        }
         @media @mobile {
-            .stack();
             .heading-paragraph(2.6rem);
+            .stack();
+            padding: 5%;
             width: 100%;
             text-align: center;
-            padding: 5%;
         }
         h1 {
             text-align: center;
@@ -161,6 +204,10 @@
             }
         }
         p {
+            font-family: @pFont;
+            @media (max-width:1000px) {
+                font-size: 2rem;
+            }
             @media @mobile {
                 font-size: 2rem;
                 width: 100%;
@@ -176,36 +223,30 @@
         padding-top: 5%;
         padding-left: 2%;
         width: 70%;
+        @media (max-width:1000px) {
+            .heading-paragraph(3.5rem);
+            padding: 5%;
+            padding-top: 0;
+            width: 70%;
+        }
         @media @mobile {
             .stack();
             .heading-paragraph(2.6rem);
-            width: 100%;
             padding: 5%;
+            width: 100%;
         }
         p {
+            font-family: @pFont;
             width: 70%;
+            @media (max-width:1000px) {
+                font-size: 2rem;
+            }
             @media @mobile {
                 font-size: 2rem;
                 width: 100%; 
             }
         }  
     }
-
-    // .the-team {
-    //     .heading-paragraph();
-    //     align-items: center;
-    // }
-
-    // .about-button-div {
-    //     padding-top: 15%;
-    //     padding-left: 40%;
-    //     align-items: center;
-    //     .about-button {
-    //         .custom-btn(#d9d9d9, 40%, black);
-            
-    //     }
-    // }
-
 }
 .team {
     .heading-paragraph();
@@ -214,6 +255,9 @@
     flex-flow: column wrap;
     text-align: center;
     padding-top: 5%;
+    @media (max-width:1000px) {
+        margin-top: 10%;
+    }
     @media @mobile {
         .stack();   
     }
@@ -224,18 +268,18 @@
         justify-content: center;
         padding-top: 3%;
         padding-bottom: 4%;
+
         h2 {
             font-size: 2rem;
             padding-top: 2%;
         }
         .card{
-            width: 33%;
+            width: 44%;
             text-align: center;
             display: flex;
             flex-flow: column wrap;
             align-content: center;
-            // margin-top: 5%;
-            //Testing out cards
+            //Cards
             margin: 2%;
             align-items: center;
             background-color: #D9D9D9;
@@ -251,22 +295,28 @@
                 padding: 3%;
             }
             p {
-                //Testing out cards
+                //cards
                 width: 100%;
                 padding: 5%;
+                @media (max-width:1000px) {
+                    font-size: 2rem;
+                }
                 @media @mobile {
                     width: 100%;
                     padding: 5%;
                 }
             }
             .github {
-                .custom-btn(#d9d9d9, 40%, black);
+                .custom-btn(#d9d9d9, 220px, black);
                 margin-left: 15%;
                 margin-top: 5%;   
                 //Testing Out Cards
                 justify-content: center;
                 margin: 0;
-                background-color: #ffffff;    
+                background-color: #ffffff;  
+                @media (max-width:1000px) {
+                    font-size: 2rem;
+                }  
                 @media @mobile {
                     justify-content: center;
                     margin: 0;
@@ -285,4 +335,3 @@
         }
     }   
 }
-
