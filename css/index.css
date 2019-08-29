@@ -236,6 +236,7 @@ p {
   .navBar nav {
     width: 50%;
     padding: 2% 0%;
+    font-size: 1.8rem;
     width: 100%;
     justify-content: space-between;
   }
