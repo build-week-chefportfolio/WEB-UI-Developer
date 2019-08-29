@@ -1,0 +1,135 @@
+@import 'mixins.less';
+
+header{
+  background: url(../img/chef-john.png);
+  height:125vh;
+  background-size:cover;
+  width:100%;
+  @media @phone {
+    max-width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:315px;
+  }
+
+  .top-content{
+    display:flex;
+    flex-direction: column;
+    // @media @phone{
+    //   padding:0% 11.2% 0% 0%;
+    // }
+    .header-content{
+      display:flex;
+      flex-direction: column;
+      width:30%;
+      color:@light-gray;
+      margin:10% 5% 0%;
+      @media @phone{
+        width:30%;
+      }
+      p{
+        font-size:2.8rem;
+        
+        @media @phone {
+          font-size:1.3rem;
+        }
+      }
+    }
+      .btn{
+        display:flex;
+        flex-direction: column;
+        width:10%;
+        background-color:#C4C4C4;
+        font-size:1.4rem;
+        color:#000000;
+        border-radius:4px;
+        margin:2% 5%;
+        padding:13px;
+        align-content: center;
+        text-align: center;
+        @media @phone{
+          font-size:1rem;
+          width:20%;
+          padding:7px;
+        }
+          a {
+            text-decoration: none;
+            color:@header-nav;
+            &:hover{
+              color:@salmon;
+                }
+          } 
+        }
+      }
+    }
+  
+    
+    
+ 
+.bottom{
+  background: url(../img/john2.jpg);
+  height:123vh;
+  background-size:cover;
+  width:100%;
+  position: absolute;
+  @media @phone{
+    max-width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:auto;
+  }
+  .bottom-container{
+    background:rgba(255, 255, 255, 0.92);
+    margin:7% 10% 0%;
+    width:78%;
+    height:75%;
+    @media @phone{
+     margin:10%;
+    }
+    h2{
+      color:#E54236;
+      text-align: center;
+      padding:4%;
+      font-size:3.9rem;
+      @media @phone{
+        font-size:3.0rem;
+      }
+    }
+    .text-form{
+      .custom-layout(space-around, center);
+      width:85%;
+      margin:7% 10% 2%;
+      @media @phone{
+        .custom-layout(space-around, center);
+        flex-direction: column;
+      }
+     p{
+      font-size:3.2rem;
+      width:58%;
+      font-family: 'Libre Franklin', sans-serif;
+      @media (max-width:1024px) {
+        font-size:2.4rem;
+      }
+      @media @phone{
+        width:100%;
+        font-size:2.4rem;
+        text-align: center;
+        padding-bottom:10px;
+      }
+    }
+    .btn{
+      .custom-layout(space-evenly, center);
+      flex-direction: column;
+      width:30%;
+      button{
+        .btn();
+        }
+      @media @phone{
+        width:100%;
+      }
+      }
+    }
+  }
+}
+
+  
