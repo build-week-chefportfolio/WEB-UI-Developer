@@ -509,7 +509,7 @@ p {
   align-items: center;
   display: flex;
   flex-flow: column wrap;
-  padding: 5%;
+  padding: 3%;
 }
 .about-container .about-bochura h1 {
   font-size: 3.6rem;
