@@ -449,6 +449,9 @@ p {
 .container-login-page .sign-in .theButtons {
   width: 50%;
 }
+.container-login-page .sign-in .theButtons a {
+  text-decoration: none;
+}
 @media (max-width: 1000px) {
   .container-login-page .sign-in .theButtons {
     margin-top: 5%;
