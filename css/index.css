@@ -579,16 +579,17 @@ header .top-content .btn a:hover {
 @media (max-width:500px) {
   .bottom-section .box .bio .name {
     width: 80%;
-    margin: auto;
+    margin: 13px auto;
     padding: 6%;
   }
 }
 .bottom-section .box .bio .name h2 {
   font-size: 2.4rem;
+  margin: auto;
 }
 @media (max-width:500px) {
   .bottom-section .box .bio .name h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin: 0 auto;
   }
 }
@@ -598,7 +599,7 @@ header .top-content .btn a:hover {
 }
 @media (max-width:500px) {
   .bottom-section .box .bio .name p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 .bottom-section .box .bio .name .git-button {
@@ -614,4 +615,9 @@ header .top-content .btn a:hover {
 }
 .bottom-section .box .bio .bottom-panel {
   width: 33%;
+}
+@media (max-width:500px) {
+  .bottom-section .box .bio .bottom-panel {
+    width: 80%;
+  }
 }
