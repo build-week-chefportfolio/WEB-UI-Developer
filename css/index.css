@@ -262,14 +262,7 @@ p {
   }
 }
 .navBar nav a:hover {
-  background-color: #ffffff;
-  color: #303030;
-  border-radius: 20px;
-}
-@media (max-width:500px) {
-  .navBar nav a:hover {
-    border-radius: 15px;
-  }
+  color: #e54236;
 }
 .container-home {
   background-image: url("../images/bohcura-background.img.jpg");
